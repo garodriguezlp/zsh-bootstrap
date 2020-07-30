@@ -1,0 +1,28 @@
+antigen use oh-my-zsh
+antigen bundles <<EOBUNDLES
+
+    # my bundles
+    garodriguezlp/zsh-bootstrap bundles/p10k
+    garodriguezlp/zsh-bootstrap bundles/tmux
+    garodriguezlp/zsh-bootstrap bundles/fzf
+
+    # from oh-my-zsh's library
+    git
+    tmux
+    autojump
+    fzf
+    github
+
+    ## just for java development
+    jenv
+    mvn
+
+    # from zsh-users
+    zsh-users/zsh-syntax-highlighting
+    zsh-users/zsh-autosuggestions
+    zsh-users/zsh-completions
+
+EOBUNDLES
+
+antigen theme romkatv/powerlevel10k
+antigen apply

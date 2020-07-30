@@ -1,0 +1,42 @@
+- defaults:
+    shell:
+        stdin: true
+        stdout: true
+        stderr: true
+    link:
+        relink: true
+        force: true
+
+- clean: ["~"]
+
+- link:
+    ~/.zshrc: dotfiles/zshrc
+    ~/.antigenrc: dotfiles/antigenrc
+    ~/.tmux.conf.local: dotfiles/tmux.conf.local
+    ~/.gitconfig: dotfiles/gitconfig
+    ~/.vimrc: dotfiles/vimrc
+
+- shell:
+    - ./scripts/secrets-setup.sh
+    - ./scripts/update-apt.sh
+    - ./scripts/brew-installer.sh
+    - ./scripts/zsh-installer.sh
+    - ./scripts/antigen-installer.sh
+    - ./scripts/tmux-installer.sh
+    - ./scripts/oh-my-tmux-installer.sh
+    - ./scripts/fzf-installer.sh
+    - ./scripts/autojump-installer.sh
+    - ./scripts/neofetch-installer.sh
+    - ./scripts/bat-installer.sh
+    - ./scripts/jq-installer.sh
+    - ./scripts/hub-installer.sh
+    - ./scripts/tldr-installer.sh
+    - ./scripts/tree-installer.sh
+    - ./scripts/fx-installer.sh
+    - ./scripts/ack-installer.sh
+    - ./scripts/httpie-installer.sh
+
+    # Just for java development
+    - ./scripts/java-installer.sh
+    - ./scripts/maven-installer.sh
+    - ./scripts/jenv-installer.sh

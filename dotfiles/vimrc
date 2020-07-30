@@ -1,0 +1,8 @@
+" My custom vim configuration
+
+:set spell
+:set list
+:set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
+:set textwidth=100
+:set rnu nu
+:set nowrap

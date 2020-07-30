@@ -1,0 +1,9 @@
+# homebrew
+[[ -d /home/linuxbrew/.linuxbrew ]] && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
+# secrets
+[[ -f "$HOME/.secrets" ]] && source "$HOME/.secrets"
+
+# antigen
+source "$HOMEBREW_PREFIX/share/antigen/antigen.zsh"
+antigen init ~/.antigenrc
