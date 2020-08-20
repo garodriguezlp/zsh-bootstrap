@@ -4,7 +4,7 @@
 
 ## Presentation Slides
 
-Slided can be found in [slides.pdf](./slides.pdf)
+Slides can be found in [slides.pdf](./slides.pdf)
 
 ## Installation
 
