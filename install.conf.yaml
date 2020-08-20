@@ -17,6 +17,7 @@
     ~/.vimrc: dotfiles/vimrc
 
 - shell:
+    # Important: This installations scripts have just been tested on Ubuntu 18.04
     - ./scripts/secrets-setup.sh
     - ./scripts/update-apt.sh
     - ./scripts/brew-installer.sh

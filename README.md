@@ -15,3 +15,7 @@ git clone https://github.com/garodriguezlp/zsh-bootstrap.git
 cd zsh-bootstrap
 ./install
 ```
+
+## Important!
+
+The installation scripts have just been tested on `Ubuntu 18.04`
