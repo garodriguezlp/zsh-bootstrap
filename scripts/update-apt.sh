@@ -11,3 +11,4 @@ source "${script_dir}/commons.sh"
 # --- ------------------------------------------------------------------------------------------------
 print_header "apt update"
 sudo apt update
+sudo apt upgrade -y

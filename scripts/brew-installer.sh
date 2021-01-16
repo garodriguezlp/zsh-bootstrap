@@ -16,7 +16,8 @@ install_brew() {
 
     echo ""
     echo "==> installing build-essential"
-    sudo apt-get install -y build-essential patch ruby-dev zlib1g-dev liblzma-dev
+    # sudo apt-get install -y build-essential patch ruby-dev zlib1g-dev liblzma-dev
+    sudo apt-get install -y build-essential
 
     echo ""
     echo "installing gcc"
